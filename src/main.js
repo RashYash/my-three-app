@@ -256,7 +256,7 @@ light.position.set(5, 5, 5);
 scene.add(light);
 
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("/texture1.jpg");
+const texture = textureLoader.load("./texture1.jpg");
 
 //cube 01
 const geometry1 = new THREE.BoxGeometry(1, 1, 1);
@@ -317,7 +317,7 @@ scene.add(directionalLight);
 
 const loader = new GLTFLoader();
 let model;
-loader.load("/snow_car.glb", function (gltf) {
+loader.load("./snow_car.glb", function (gltf) {
   model = gltf.scene;
   model.scale.set(1, 1, 1);
   model.position.set(0, 0, 0);
@@ -373,7 +373,7 @@ controls.enableDamping = true;
 const loader = new GLTFLoader();
 let model;
 
-loader.load("/class.glb", function (gltf) {
+loader.load("./class.glb", function (gltf) {
   model = gltf.scene;
   model.scale.set(0.1, 0.1, 0.1);
   model.position.set(0, 0, 0);
